@@ -1,0 +1,41 @@
+{
+  "variantName": "cards-theme",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-27T08:10:37.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unileverfoodsolutions.nl/inspiratie-voor-chefs.html",
+    "originPage": "Chef inspiration themes overview page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "theme-navigation",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + title overlay + description + read-more link",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "category overview pages",
+      "theme/topic listing pages",
+      "content hub pages with multiple linked sections",
+      "inspiration or resource index pages"
+    ],
+    "notSuitableFor": [
+      "product detail cards with pricing",
+      "team member profiles",
+      "testimonial cards",
+      "cards without images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/inspiratie-voor-chefs"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-27T08:10:37.000Z"
+  }
+}

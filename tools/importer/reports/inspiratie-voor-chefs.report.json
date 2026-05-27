@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.unileverfoodsolutions.nl/inspiratie-voor-chefs.html",
+  "path": "inspiratie-voor-chefs",
+  "timestamp": "2026-05-27T08:22:53.122Z",
+  "title": "Inspiratie voor chefs",
+  "template": "chefpage",
+  "blocks": [
+    "cards-theme"
+  ]
+}

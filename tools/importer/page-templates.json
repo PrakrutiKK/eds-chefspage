@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "projectType": "xwalk"
+  },
+  "templates": [
+    {
+      "name": "chefpage",
+      "urls": [
+        "https://www.unileverfoodsolutions.nl/inspiratie-voor-chefs.html"
+      ],
+      "description": "Chef inspiration page with recipes and culinary content for food service professionals",
+      "blocks": [
+        {
+          "name": "cards-theme",
+          "instances": [
+            "ul.item-list__grid"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Page Header",
+          "selector": "div.themeheaderversiona.section",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "div.themeheaderversiona.section h1",
+            "div.themeheaderversiona.section p"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Theme Cards Grid",
+          "selector": "div.allthemes.section",
+          "style": null,
+          "blocks": [
+            "cards-theme"
+          ],
+          "defaultContent": [
+            "div.allthemes.section .all-themes__header p"
+          ]
+        }
+      ]
+    }
+  ]
+}

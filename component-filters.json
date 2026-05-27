@@ -19,6 +19,12 @@
     ]
   },
   {
+    "id": "cards-theme",
+    "components": [
+      "card"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
