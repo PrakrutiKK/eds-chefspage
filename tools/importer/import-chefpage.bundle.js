@@ -70,7 +70,14 @@ var CustomImportScript = (() => {
       const imageCell = document.createDocumentFragment();
       imageCell.appendChild(document.createComment(" field:image "));
       if (desktopImg) {
-        imageCell.appendChild(desktopImg);
+        const picture = document.createElement("picture");
+        const img = document.createElement("img");
+        img.src = desktopImg.src || desktopImg.getAttribute("src");
+        img.alt = desktopImg.alt || desktopImg.getAttribute("alt") || "";
+        picture.appendChild(img);
+        const p = document.createElement("p");
+        p.appendChild(picture);
+        imageCell.appendChild(p);
       }
       const textCell = document.createDocumentFragment();
       textCell.appendChild(document.createComment(" field:text "));
