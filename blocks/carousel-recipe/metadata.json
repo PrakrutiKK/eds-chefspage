@@ -1,0 +1,41 @@
+{
+  "variantName": "carousel-recipe",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-06-01T09:42:56.099Z",
+  "sourceContext": {
+    "originUrl": "https://www.unileverfoodsolutions.co.uk/recipes.html",
+    "originPage": "Recipes overview/listing page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "recipe-featured",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + title link + category tags",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "recipe overview pages with featured items",
+      "content listing pages with highlighted items",
+      "food/culinary content carousels",
+      "featured article or product sliders"
+    ],
+    "notSuitableFor": [
+      "hero banner carousels with full-width background images",
+      "testimonial carousels",
+      "image-only gallery carousels",
+      "carousels with complex multi-column slide content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/recipes"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-01T09:42:56.099Z"
+  }
+}

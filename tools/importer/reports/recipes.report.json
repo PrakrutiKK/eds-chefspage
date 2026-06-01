@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.unileverfoodsolutions.co.uk/recipes.html",
+  "path": "recipes",
+  "timestamp": "2026-06-01T10:36:02.353Z",
+  "title": "Recipes",
+  "template": "recipes",
+  "blocks": [
+    "carousel-recipe",
+    "cards-recipe"
+  ]
+}

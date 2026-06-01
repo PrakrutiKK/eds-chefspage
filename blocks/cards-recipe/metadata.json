@@ -1,0 +1,41 @@
+{
+  "variantName": "cards-recipe",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-01T09:42:56.125Z",
+  "sourceContext": {
+    "originUrl": "https://www.unileverfoodsolutions.co.uk/recipes.html",
+    "originPage": "Recipes overview/listing page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "recipe-listing",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + title link + category tag",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "recipe listing/overview pages",
+      "food/culinary content grids",
+      "article listing pages with image thumbnails",
+      "product catalog grid pages"
+    ],
+    "notSuitableFor": [
+      "category/theme navigation cards with overlay text",
+      "team member profile cards",
+      "testimonial cards without images",
+      "cards with long descriptions or multiple CTAs"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/recipes"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-01T09:42:56.125Z"
+  }
+}
