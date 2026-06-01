@@ -42,6 +42,49 @@
           ]
         }
       ]
+    },
+    {
+      "name": "recipes",
+      "urls": [
+        "https://www.unileverfoodsolutions.co.uk/recipes.html"
+      ],
+      "description": "Recipes landing page with search functionality and recipe card grid for food service professionals",
+      "blocks": [
+        {
+          "name": "carousel-recipe",
+          "instances": ["div.featured-item-slider__wrapper"]
+        },
+        {
+          "name": "cards-recipe",
+          "instances": ["div.product__lister.recipes"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Page Title",
+          "selector": "div.recipeslandingpage.section",
+          "style": null,
+          "blocks": [],
+          "defaultContent": ["h1"]
+        },
+        {
+          "id": "section-2",
+          "name": "Top Recipes Carousel",
+          "selector": "div.toprecipes.section",
+          "style": null,
+          "blocks": ["carousel-recipe"],
+          "defaultContent": ["h2.featured-item-slider__title"]
+        },
+        {
+          "id": "section-3",
+          "name": "Recipe Listing Grid",
+          "selector": "div.recipeslister.section",
+          "style": null,
+          "blocks": ["cards-recipe"],
+          "defaultContent": []
+        }
+      ]
     }
   ]
 }
