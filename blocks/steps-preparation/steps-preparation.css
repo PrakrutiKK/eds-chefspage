@@ -1,0 +1,94 @@
+.steps-preparation h3 {
+  color: #ff5a00;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 24px;
+}
+
+.steps-preparation .steps-list {
+  position: relative;
+}
+
+.steps-preparation .step-item {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.steps-preparation .step-item::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 32px;
+  bottom: 0;
+  width: 2px;
+  background-color: #ff5a00;
+}
+
+.steps-preparation .step-item:last-of-type::before {
+  display: none;
+}
+
+.steps-preparation .step-badge {
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #ff5a00;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.steps-preparation .step-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.steps-preparation .step-content h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 2px 0 8px;
+}
+
+.steps-preparation .step-content ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.steps-preparation .step-content li {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.steps-preparation .step-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.steps-preparation .step-tag {
+  display: inline-block;
+  background-color: #3d3349;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.steps-preparation .step-tag:hover {
+  background-color: #2d2638;
+}

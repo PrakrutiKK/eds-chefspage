@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-article",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-04T11:12:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unileverfoodsolutions.co.uk/about-our-brands.html",
+    "originPage": "Brands landing page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "article-listing",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "small thumbnail image + article title link",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand article listing sections",
+      "compact content card lists with thumbnails",
+      "sidebar article listings",
+      "related articles sections with small images"
+    ],
+    "notSuitableFor": [
+      "large featured content cards with overlay text",
+      "product catalog grids with detailed info",
+      "hero-style cards with full-width images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/about-our-brands"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-04T11:12:00.000Z"
+  }
+}

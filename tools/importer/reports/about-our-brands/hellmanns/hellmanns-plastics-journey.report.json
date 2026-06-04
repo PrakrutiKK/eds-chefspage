@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.unileverfoodsolutions.co.uk/about-our-brands/hellmanns/Hellmanns-Plastics-Journey.html",
+  "path": "about-our-brands/hellmanns/hellmanns-plastics-journey",
+  "timestamp": "2026-06-04T11:32:18.821Z",
+  "title": "Hellmann's",
+  "template": "brands-landing",
+  "blocks": [
+    "tabs-brand",
+    "cards-theme"
+  ]
+}

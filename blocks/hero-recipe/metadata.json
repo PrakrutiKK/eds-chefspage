@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-recipe",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-01T16:44:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unileverfoodsolutions.co.uk/recipe/barley-greens-bowl-with-matcha-yuzu-dressing-R90033590.html",
+    "originPage": "Recipe detail page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "recipe-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + h1 title",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "recipe detail pages with hero image",
+      "food/dish feature pages with prominent photography",
+      "article detail pages with header image"
+    ],
+    "notSuitableFor": [
+      "hero sections with multiple CTAs",
+      "hero sections without background images",
+      "landing pages with complex hero content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/recipe/barley-greens-bowl-with-matcha-yuzu-dressing-r90033590"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-01T16:44:00.000Z"
+  }
+}

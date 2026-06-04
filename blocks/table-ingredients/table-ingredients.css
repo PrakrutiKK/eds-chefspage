@@ -1,0 +1,57 @@
+.table-ingredients.block {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-ingredients.block table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.table-ingredients.block table thead tr {
+  display: none;
+}
+
+.table-ingredients.block table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.table-ingredients.block table th,
+.table-ingredients.block table td {
+  padding: 12px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table-ingredients.block table td:last-child {
+  font-weight: 700;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.table-ingredients table th p,
+.table-ingredients table td p {
+  margin: 0;
+}
+
+.table-ingredients table td p + p {
+  margin-top: 0.25em;
+}
+
+.table-ingredients.block table td a:any-link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.table-ingredients.block table td a:hover {
+  text-decoration: underline;
+}
+
+.table-ingredients.block table td h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 16px 0 8px;
+  color: var(--text-color);
+}
