@@ -32,7 +32,9 @@ export default async function decorate(block) {
     button.className = 'tabs-brand-tab';
     button.id = `tab-${id}`;
 
-    button.innerHTML = tab.innerHTML;
+    const link = tab.querySelector('a');
+    button.textContent = link ? link.textContent.trim() : tab.textContent.trim();
+    if (link) button.dataset.href = link.href;
 
     button.setAttribute('aria-controls', id);
     button.setAttribute('aria-selected', !i);
@@ -40,14 +42,18 @@ export default async function decorate(block) {
     button.setAttribute('type', 'button');
 
     button.addEventListener('click', () => {
-      block.querySelectorAll('[role=tabpanel]').forEach((panel) => {
-        panel.setAttribute('aria-hidden', true);
-      });
-      tablist.querySelectorAll('button').forEach((btn) => {
-        btn.setAttribute('aria-selected', false);
-      });
-      tabpanel.setAttribute('aria-hidden', false);
-      button.setAttribute('aria-selected', true);
+      if (button.dataset.href) {
+        window.location.href = button.dataset.href;
+      } else {
+        block.querySelectorAll('[role=tabpanel]').forEach((panel) => {
+          panel.setAttribute('aria-hidden', true);
+        });
+        tablist.querySelectorAll('button').forEach((btn) => {
+          btn.setAttribute('aria-selected', false);
+        });
+        tabpanel.setAttribute('aria-hidden', false);
+        button.setAttribute('aria-selected', true);
+      }
     });
 
     // add the new tab list button, to the tablist
