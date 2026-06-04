@@ -1,0 +1,40 @@
+{
+  "variantName": "tabs-brand",
+  "baseBlock": "tabs",
+  "version": "1.0.0",
+  "created": "2026-06-04T11:12:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unileverfoodsolutions.co.uk/about-our-brands.html",
+    "originPage": "Brands landing page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "purpose": "brand-navigation",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "tab links for brand category navigation",
+    "buttonCount": 5,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand category landing pages",
+      "sub-navigation within a section",
+      "content filtering by category",
+      "tabbed navigation between related pages"
+    ],
+    "notSuitableFor": [
+      "in-page content switching with rich panels",
+      "FAQ or accordion-style content",
+      "single-page tab panels with heavy content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/about-our-brands"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-04T11:12:00.000Z"
+  }
+}

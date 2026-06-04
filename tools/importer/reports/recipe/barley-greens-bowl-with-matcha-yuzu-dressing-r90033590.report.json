@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.unileverfoodsolutions.co.uk/recipe/barley-greens-bowl-with-matcha-yuzu-dressing-R90033590.html",
+  "path": "recipe/barley-greens-bowl-with-matcha-yuzu-dressing-r90033590",
+  "timestamp": "2026-06-01T16:55:10.112Z",
+  "title": "Barley Greens Bowl with Matcha Yuzu Dressing Recipe",
+  "template": "recipe-detail",
+  "blocks": [
+    "hero-recipe",
+    "table-ingredients",
+    "columns-chef",
+    "columns-chef",
+    "carousel-recipe"
+  ]
+}

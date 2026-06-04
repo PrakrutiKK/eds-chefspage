@@ -1,0 +1,70 @@
+.tabs-brand {
+  background-color: #eeefef;
+  padding: 0;
+  margin: 0 -24px;
+}
+
+@media (width >= 900px) {
+  .tabs-brand {
+    margin: 0 -32px;
+  }
+}
+
+.tabs-brand .tabs-brand-list {
+  display: flex;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  overflow-x: auto;
+  list-style: none;
+}
+
+.tabs-brand .tabs-brand-list::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs-brand .tabs-brand-list button {
+  flex: 0 0 max-content;
+  margin: 0;
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  padding: 14px 16px;
+  background-color: transparent;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  text-overflow: unset;
+  overflow: unset;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.tabs-brand .tabs-brand-list button:hover {
+  border-bottom-color: #999;
+}
+
+.tabs-brand .tabs-brand-list button p {
+  margin: 0;
+}
+
+.tabs-brand .tabs-brand-list button[aria-selected="true"] {
+  border-bottom-color: #ff5a00;
+  background-color: transparent;
+  cursor: default;
+}
+
+.tabs-brand .tabs-brand-panel {
+  margin-top: 0;
+  padding: 0;
+  border: none;
+  overflow: auto;
+}
+
+.tabs-brand .tabs-brand-panel[aria-hidden="true"] {
+  display: none;
+}

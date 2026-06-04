@@ -1,0 +1,40 @@
+{
+  "variantName": "columns-brand",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-06-04T11:12:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unileverfoodsolutions.co.uk/about-our-brands.html",
+    "originPage": "Brands landing page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "brand-columns",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "3 columns of brand article listings",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand category pages with multi-column content",
+      "dashboard-style layouts with multiple content areas",
+      "three-column article listing layouts",
+      "content hub pages with categorized sections"
+    ],
+    "notSuitableFor": [
+      "simple two-column text/image layouts",
+      "side-by-side comparison layouts",
+      "single content column with sidebar"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/about-our-brands"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-04T11:12:00.000Z"
+  }
+}

@@ -85,6 +85,115 @@
           "defaultContent": []
         }
       ]
+    },
+    {
+      "name": "recipe-detail",
+      "urls": [
+        "https://www.unileverfoodsolutions.co.uk/recipe/barley-greens-bowl-with-matcha-yuzu-dressing-R90033590.html"
+      ],
+      "description": "Recipe detail page with hero image, ingredients table, preparation steps, chef attribution, and related recipes carousel",
+      "blocks": [
+        {
+          "name": "hero-recipe",
+          "instances": ["div.page-header_recipe"]
+        },
+        {
+          "name": "table-ingredients",
+          "instances": ["#ingredients-content"]
+        },
+        {
+          "name": "columns-chef",
+          "instances": [".chef-name"]
+        },
+        {
+          "name": "carousel-recipe",
+          "instances": ["div.relatedrecipes.section .featured-item-slider__wrapper"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Recipe Hero",
+          "selector": "div.recipe-detailv3",
+          "style": "dark",
+          "blocks": ["hero-recipe"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Recipe Content",
+          "selector": "div.recipe-detailv3__recipe",
+          "style": null,
+          "blocks": ["table-ingredients", "columns-chef"],
+          "defaultContent": ["p.recipe-desc", "#preparation-content"]
+        },
+        {
+          "id": "section-3",
+          "name": "Related Recipes",
+          "selector": "div.relatedrecipes.section",
+          "style": null,
+          "blocks": ["carousel-recipe"],
+          "defaultContent": []
+        }
+      ]
+    },
+    {
+      "name": "brands-landing",
+      "urls": [
+        "https://www.unileverfoodsolutions.co.uk/about-our-brands.html"
+      ],
+      "description": "Brands landing page with navigation tabs, featured content cards grid, and brand category sections",
+      "blocks": [
+        {
+          "name": "tabs-brand",
+          "instances": ["nav.theme-sub-navigation"]
+        },
+        {
+          "name": "cards-theme",
+          "instances": ["div.top-content-item-section"]
+        },
+        {
+          "name": "cards-article",
+          "instances": [".item-list--articles"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Page Header",
+          "selector": "div.themeheaderversiona.section",
+          "style": null,
+          "blocks": ["tabs-brand"],
+          "defaultContent": ["h1"]
+        },
+        {
+          "id": "section-2",
+          "name": "Featured Content",
+          "selector": "div.topcontent.section",
+          "style": null,
+          "blocks": ["cards-theme"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Brand Articles",
+          "selector": "div.themearticles.section",
+          "style": null,
+          "blocks": ["cards-article"],
+          "defaultContent": []
+        }
+      ]
+    },
+    {
+      "name": "brand-category",
+      "urls": [
+        "https://www.unileverfoodsolutions.co.uk/about-our-brands/knorr-professional.html",
+        "https://www.unileverfoodsolutions.co.uk/about-our-brands/carte-dor-desserts.html",
+        "https://www.unileverfoodsolutions.co.uk/about-our-brands/hellmanns.html",
+        "https://www.unileverfoodsolutions.co.uk/about-our-brands/colmans.html"
+      ],
+      "description": "Brand category page with brand hero, article cards grid, and brand-specific content",
+      "blocks": []
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.unileverfoodsolutions.co.uk/about-our-brands/colmans.html",
+  "path": "about-our-brands/colmans",
+  "timestamp": "2026-06-04T11:24:55.615Z",
+  "title": "Colman's",
+  "template": "brands-landing",
+  "blocks": [
+    "tabs-brand",
+    "cards-theme"
+  ]
+}

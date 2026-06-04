@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.unileverfoodsolutions.co.uk/about-our-brands/knorr-professional.html",
+  "path": "about-our-brands/knorr-professional",
+  "timestamp": "2026-06-04T11:24:35.122Z",
+  "title": "Knorr® Professional",
+  "template": "brands-landing",
+  "blocks": [
+    "tabs-brand",
+    "cards-theme",
+    "cards-article",
+    "cards-article",
+    "cards-article"
+  ]
+}

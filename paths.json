@@ -1,6 +1,5 @@
 {
   "mappings": [
-    "/content/eds-chefspage/:/",
-    "/content/eds-chefspage/chefpage:/chefpage"
+    "/content/eds-chefspage/:/"
   ]
 }

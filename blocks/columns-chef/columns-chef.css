@@ -1,0 +1,26 @@
+.columns-chef > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  border-top: 1px solid #eee;
+}
+
+.columns-chef > div > .columns-chef-img-col {
+  flex: 0 0 auto;
+}
+
+.columns-chef > div > .columns-chef-img-col img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.columns-chef > div > div:not(.columns-chef-img-col) h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: #000;
+}
