@@ -35,6 +35,15 @@
   overflow: hidden;
 }
 
+.cards-article .cards-article-card-image a {
+  display: block;
+  text-decoration: none;
+  color: transparent;
+  overflow: hidden;
+  aspect-ratio: 350 / 250;
+  background-color: #f0f0f0;
+}
+
 .cards-article > ul > li img {
   width: 100%;
   aspect-ratio: 350 / 250;
