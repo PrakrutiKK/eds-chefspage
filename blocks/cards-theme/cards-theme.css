@@ -7,6 +7,10 @@
   gap: 40px 20px;
 }
 
+.cards-theme > ul:empty {
+  display: none;
+}
+
 @media (width >= 600px) {
   .cards-theme > ul {
     grid-template-columns: repeat(2, 1fr);
@@ -15,6 +19,10 @@
 
 .cards-theme > ul > li {
   background-color: var(--background-color);
+}
+
+.cards-theme > ul > li:empty {
+  display: none;
 }
 
 .cards-theme .cards-theme-card-image {

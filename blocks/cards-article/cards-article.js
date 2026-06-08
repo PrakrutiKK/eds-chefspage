@@ -15,6 +15,28 @@ export default function decorate(block) {
         div.className = 'cards-article-card-body';
       }
     });
+
+    const bodyDiv = li.querySelector('.cards-article-card-body');
+    const imageDiv = li.querySelector('.cards-article-card-image');
+    const link = bodyDiv ? bodyDiv.querySelector('a') : null;
+
+    if (link) {
+      link.classList.remove('button', 'primary', 'secondary', 'accent');
+      const wrapper = link.closest('.button-wrapper');
+      if (wrapper) wrapper.classList.remove('button-wrapper');
+    }
+
+    if (imageDiv && link) {
+      const picture = imageDiv.querySelector('picture');
+      if (picture) {
+        const a = document.createElement('a');
+        a.href = link.href;
+        a.setAttribute('aria-label', link.textContent);
+        a.append(picture);
+        imageDiv.append(a);
+      }
+    }
+
     ul.append(li);
   });
   block.textContent = '';
