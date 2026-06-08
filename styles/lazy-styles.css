@@ -1,1 +1,24 @@
 /* add global styles that can be loaded post LCP here */
+
+/* Brand page section spacing */
+.section.tabs-brand-container {
+  margin-bottom: 0;
+}
+
+.section.cards-article-container {
+  margin-top: 20px;
+}
+
+.section.cards-article-container h2 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.section.cards-article-container h2:first-child {
+  margin-top: 0;
+}

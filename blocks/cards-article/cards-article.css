@@ -67,7 +67,7 @@
 .cards-article .cards-article-card-body a:any-link,
 .cards-article .cards-article-card-body a.button:any-link {
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   background: none;

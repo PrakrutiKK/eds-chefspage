@@ -65,6 +65,11 @@
   overflow: auto;
 }
 
+.tabs-brand .tabs-brand-panel:empty,
+.tabs-brand .tabs-brand-panel > div:empty {
+  display: none;
+}
+
 .tabs-brand .tabs-brand-panel[aria-hidden="true"] {
   display: none;
 }

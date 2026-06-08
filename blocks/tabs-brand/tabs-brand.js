@@ -33,8 +33,26 @@ export default async function decorate(block) {
     button.id = `tab-${id}`;
 
     const link = tab.querySelector('a');
-    button.textContent = link ? link.textContent.trim() : tab.textContent.trim();
-    if (link) button.dataset.href = link.href;
+    let label = link ? link.textContent.trim() : tab.textContent.trim();
+    if (link) {
+      try {
+        const url = new URL(link.href);
+        if (label === link.href || label === url.href) {
+          const segments = url.pathname.replace(/\.html$/, '').split('/').filter(Boolean);
+          const lastSegment = segments[segments.length - 1] || '';
+          label = lastSegment
+            .replace(/-/g, ' ')
+            .replace(/\b\w/g, (c) => c.toUpperCase());
+          if (segments.length === 1 || (segments.length === 2 && !segments[1])) {
+            label = 'Inspiration From Our Brands';
+          }
+          const h1 = document.querySelector('h1');
+          if (h1 && i === 0) label = h1.textContent.trim();
+        }
+      } catch { /* use original label */ }
+      button.dataset.href = link.href;
+    }
+    button.textContent = label;
 
     button.setAttribute('aria-controls', id);
     button.setAttribute('aria-selected', !i);
