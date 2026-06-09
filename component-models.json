@@ -268,22 +268,34 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "media_image",
-        "label": "Background Image",
+        "name": "image",
+        "label": "Product Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "media_imageAlt",
+        "name": "imageAlt",
         "value": "",
-        "label": "Bacgkround Alt"
+        "label": "Product Image Alt"
       },
       {
         "component": "richtext",
-        "name": "content_text",
+        "name": "title",
         "value": "",
-        "label": "Text",
+        "label": "Product Title",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "buyLink",
+        "label": "Buy Product Link",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "specLink",
+        "label": "Product Specification Link",
         "valueType": "string"
       }
     ]
