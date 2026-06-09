@@ -1,0 +1,41 @@
+{
+  "variantName": "carousel-hero",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-06-09T06:46:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unileverfoodsolutions.co.uk/",
+    "originPage": "homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "promotional-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + overlay CTA button per slide",
+    "buttonCount": 1,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "homepage hero banner carousels",
+      "promotional landing page sliders",
+      "campaign banner rotators with CTA buttons",
+      "full-width rotating banner sections"
+    ],
+    "notSuitableFor": [
+      "recipe carousels with detailed content",
+      "product listing carousels",
+      "text-heavy content sliders",
+      "thumbnail gallery carousels"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-09T06:46:00.000Z"
+  }
+}

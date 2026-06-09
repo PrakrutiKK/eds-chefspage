@@ -1,0 +1,76 @@
+.columns-inspiration > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (width >= 900px) {
+  .columns-inspiration > div {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .columns-inspiration > div > div:first-child {
+    flex: 2;
+  }
+
+  .columns-inspiration > div > div:last-child {
+    flex: 1;
+  }
+}
+
+.columns-inspiration h2,
+.columns-inspiration h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 0 16px;
+  color: var(--text-color);
+  text-transform: none;
+}
+
+.columns-inspiration img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.columns-inspiration > div > div:first-child img {
+  aspect-ratio: 16 / 9;
+}
+
+.columns-inspiration > div > div:last-child picture {
+  flex-shrink: 0;
+}
+
+.columns-inspiration > div > div:last-child img {
+  width: 120px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.columns-inspiration > div > div:last-child p {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.columns-inspiration > div > div:last-child p:last-child {
+  border-bottom: none;
+}
+
+.columns-inspiration a:any-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.columns-inspiration a:hover {
+  color: var(--link-color);
+}

@@ -1,6 +1,6 @@
 {
   "type": "xwalk",
-  "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
+  "libraryUrl": "https://main--eds-chefspage--PrakrutiKK.aem.page/tools/sidekick/library.json",
   "contentHostUrl": "author-p64105-e536191.adobeaemcloud.com",
   "aemSitePath": "/content/eds-chefspage",
   "aemAssetsFolderPath": "/content/dam/eds-chefspage",

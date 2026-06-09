@@ -1,0 +1,41 @@
+{
+  "variantName": "cards-brand",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-09T06:46:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unileverfoodsolutions.co.uk/",
+    "originPage": "homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "brand-logos",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "grid of brand logo images with links",
+    "buttonCount": 0,
+    "imageCount": 11
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand logo bars on homepage or landing pages",
+      "partner/sponsor logo grids",
+      "brand portfolio display sections",
+      "clickable logo grids linking to filtered catalogues"
+    ],
+    "notSuitableFor": [
+      "product cards with descriptions",
+      "article listing cards",
+      "feature highlight cards with text",
+      "team member cards with bios"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-09T06:46:00.000Z"
+  }
+}
