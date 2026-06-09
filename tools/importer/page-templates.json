@@ -194,6 +194,93 @@
       ],
       "description": "Brand category page with brand hero, article cards grid, and brand-specific content",
       "blocks": []
+    },
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.unileverfoodsolutions.co.uk/"
+      ],
+      "description": "Homepage with hero banner, recipe carousels, themed content cards, and promotional sections for food service professionals",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": ["div.hero.section .hero.hero-banner-bg"]
+        },
+        {
+          "name": "columns-inspiration",
+          "instances": ["div.inspiration.section .pagecol-wrapper.item-list__columns.chefs-inspiration"]
+        },
+        {
+          "name": "carousel-product",
+          "instances": ["div.productcarousel.section .product-carrousel"]
+        },
+        {
+          "name": "hero-newsletter",
+          "instances": ["div.hero.section .hero.pagecol-wrapper"]
+        },
+        {
+          "name": "cards-brand",
+          "instances": ["div.brandlistv2.section .brand-list__short"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Page Intro",
+          "selector": "div.introtext.section",
+          "style": null,
+          "blocks": [],
+          "defaultContent": ["div.introtext.section h1", "div.introtext.section h2"]
+        },
+        {
+          "id": "section-2",
+          "name": "Hero Carousel Banner",
+          "selector": "div.hero.section:first-of-type",
+          "style": null,
+          "blocks": ["carousel-hero"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Chef Inspiration and Recipes",
+          "selector": "div.inspiration.section",
+          "style": null,
+          "blocks": ["columns-inspiration"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Recommended Products",
+          "selector": "div.productcarousel.section",
+          "style": null,
+          "blocks": ["carousel-product"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Newsletter Signup Banner",
+          "selector": "div.hero.section:nth-of-type(2)",
+          "style": null,
+          "blocks": ["hero-newsletter"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Brand Logo Bar",
+          "selector": "div.brandlistv2.section",
+          "style": null,
+          "blocks": ["cards-brand"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-7",
+          "name": "Trends CTA Banner",
+          "selector": "div.vanityurlconfigitem.section",
+          "style": "dark",
+          "blocks": [],
+          "defaultContent": ["div.vanityurlconfigitem.section a img"]
+        }
+      ]
     }
   ]
 }

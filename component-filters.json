@@ -25,6 +25,12 @@
     ]
   },
   {
+    "id": "cards-brand",
+    "components": [
+      "card"
+    ]
+  },
+  {
     "id": "cards-recipe",
     "components": [
       "card"
@@ -40,6 +46,18 @@
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "carousel-hero",
+    "components": [
+      "carousel-hero-item"
+    ]
+  },
+  {
+    "id": "carousel-product",
+    "components": [
+      "carousel-product-item"
     ]
   },
   {
@@ -65,6 +83,21 @@
   },
   {
     "id": "columns-chef",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
+    "id": "columns-inspiration",
     "components": [
       "column"
     ]

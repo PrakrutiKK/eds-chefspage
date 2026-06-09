@@ -1,0 +1,41 @@
+{
+  "variantName": "hero-newsletter",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-09T06:46:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unileverfoodsolutions.co.uk/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "newsletter-cta",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "background image + heading + description + CTA button",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "newsletter signup promotional banners",
+      "email subscription CTA sections",
+      "mid-page promotional hero banners",
+      "registration/signup call-to-action sections"
+    ],
+    "notSuitableFor": [
+      "page-level hero banners at top of page",
+      "recipe detail page heroes",
+      "hero sections with multiple CTAs",
+      "image galleries or carousels"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-09T06:46:00.000Z"
+  }
+}

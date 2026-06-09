@@ -1,0 +1,41 @@
+.cards-brand > ul {
+  list-style: none;
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px 40px;
+}
+
+.cards-brand > ul > li {
+  background: none;
+  border: none;
+}
+
+.cards-brand .cards-brand-card-body {
+  display: none;
+}
+
+.cards-brand .cards-brand-card-image {
+  line-height: 0;
+}
+
+.cards-brand > ul > li img {
+  width: auto;
+  height: 50px;
+  object-fit: contain;
+  filter: none;
+  transition: transform 0.2s;
+}
+
+.cards-brand > ul > li:hover img {
+  transform: scale(1.1);
+}
+
+@media (width >= 600px) {
+  .cards-brand > ul > li img {
+    height: 60px;
+  }
+}

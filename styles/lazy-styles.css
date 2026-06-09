@@ -22,3 +22,46 @@
 .section.cards-article-container h2:first-child {
   margin-top: 0;
 }
+
+/* stylelint-disable-next-line no-descending-specificity */
+.section.carousel-product-container h2 {
+  font-family: var(--display-font-family);
+  font-size: 40px;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section.carousel-hero-container {
+  margin-top: 0;
+}
+
+.section.hero-newsletter-container {
+  margin: 0;
+}
+
+.section.cards-brand-container {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.section.dark {
+  background-color: #1a1a2e;
+  padding: 40px 0;
+}
+
+.section.dark img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.section.dark a {
+  display: block;
+}
+
+/* Orange CTA banner styling */
+.section.dark .default-content-wrapper {
+  text-align: center;
+}

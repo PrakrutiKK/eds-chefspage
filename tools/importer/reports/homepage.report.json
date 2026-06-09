@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.unileverfoodsolutions.co.uk/",
+  "path": "homepage",
+  "timestamp": "2026-06-09T07:12:39.023Z",
+  "title": "Unilever Food Solutions UK | UFS UK | Unilever Food Solutions UK",
+  "template": "homepage",
+  "blocks": [
+    "carousel-hero",
+    "columns-inspiration",
+    "carousel-product",
+    "hero-newsletter",
+    "cards-brand"
+  ]
+}

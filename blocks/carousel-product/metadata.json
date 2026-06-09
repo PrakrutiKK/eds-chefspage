@@ -1,0 +1,41 @@
+{
+  "variantName": "carousel-product",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-06-09T06:46:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unileverfoodsolutions.co.uk/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "product-carousel",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + product tile carousel (image + name + buy button + spec link)",
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product recommendation carousels",
+      "featured product sliders on homepage",
+      "product listing carousels with buy buttons",
+      "e-commerce product showcase sections"
+    ],
+    "notSuitableFor": [
+      "hero banner carousels",
+      "text-heavy content sliders",
+      "recipe or article carousels",
+      "image gallery carousels without product details"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-09T06:46:00.000Z"
+  }
+}
