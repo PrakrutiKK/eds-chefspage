@@ -81,6 +81,25 @@ function createField(field, formId) {
   return wrapper;
 }
 
+// spam trap: hidden from people and assistive tech, but bots tend to fill it in.
+// "_gotcha" is the field name Formspree uses to silently drop spam.
+function createHoneypot(formId) {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'reach-out-form-hp';
+  wrapper.setAttribute('aria-hidden', 'true');
+  const label = document.createElement('label');
+  label.htmlFor = `${formId}-gotcha`;
+  label.textContent = 'Leave this field empty';
+  const input = document.createElement('input');
+  input.id = `${formId}-gotcha`;
+  input.name = '_gotcha';
+  input.type = 'text';
+  input.tabIndex = -1;
+  input.autocomplete = 'off';
+  wrapper.append(label, input);
+  return wrapper;
+}
+
 function getErrorMessage(input) {
   const field = FIELDS.find((f) => f.name === input.name);
   const { validity } = input;
@@ -122,7 +141,7 @@ export default async function decorate(block) {
   const form = document.createElement('form');
   form.noValidate = true;
   form.id = formId;
-  form.append(...FIELDS.map((field) => createField(field, formId)));
+  form.append(...FIELDS.map((field) => createField(field, formId)), createHoneypot(formId));
 
   const status = document.createElement('p');
   status.className = 'reach-out-form-status';
@@ -137,7 +156,18 @@ export default async function decorate(block) {
   actions.append(submit);
   form.append(status, actions);
 
-  const inputs = [...form.querySelectorAll('input')];
+  const inputs = [...form.querySelectorAll('.reach-out-form-field input')];
+  const honeypot = form.querySelector('input[name="_gotcha"]');
+
+  const showSuccess = () => {
+    const success = document.createElement('p');
+    success.className = 'reach-out-form-success';
+    success.setAttribute('role', 'status');
+    success.tabIndex = -1;
+    success.textContent = successMessage;
+    form.replaceWith(success);
+    success.focus();
+  };
   inputs.forEach((input) => {
     input.addEventListener('blur', () => { if (input.value) validateInput(input); });
     input.addEventListener('input', () => {
@@ -152,6 +182,11 @@ export default async function decorate(block) {
       invalid[0].focus();
       return;
     }
+    // bots get the normal thank-you, but nothing is sent
+    if (honeypot.value) {
+      showSuccess();
+      return;
+    }
     status.textContent = '';
     status.classList.remove('error');
     if (!endpoint) {
@@ -163,13 +198,7 @@ export default async function decorate(block) {
     submit.textContent = 'Sending…';
     try {
       await submitForm(form, endpoint);
-      const success = document.createElement('p');
-      success.className = 'reach-out-form-success';
-      success.setAttribute('role', 'status');
-      success.tabIndex = -1;
-      success.textContent = successMessage;
-      form.replaceWith(success);
-      success.focus();
+      showSuccess();
     } catch (err) {
       status.textContent = ERROR_MESSAGE;
       status.classList.add('error');

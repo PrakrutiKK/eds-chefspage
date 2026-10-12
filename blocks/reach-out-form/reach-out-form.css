@@ -51,6 +51,14 @@
   display: none;
 }
 
+.reach-out-form .reach-out-form-hp {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .reach-out-form .reach-out-form-status {
   margin: 0;
 }

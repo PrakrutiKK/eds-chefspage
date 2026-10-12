@@ -38,6 +38,8 @@ function doGet() {
 
 function doPost(e) {
   const params = (e && e.parameter) || {};
+  // honeypot filled in: likely a bot, reply as if saved but store nothing
+  if (params._gotcha) return json({ result: 'success' });
   const entry = {
     firstName: clean(params.firstName, 50),
     lastName: clean(params.lastName, 50),
