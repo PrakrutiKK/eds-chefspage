@@ -5205,7 +5205,7 @@
         "component": "text",
         "valueType": "string",
         "name": "endpoint",
-        "label": "Submission endpoint (Apps Script web app URL)",
+        "label": "Submission endpoint (Formspree form URL or Apps Script web app URL)",
         "required": true
       },
       {

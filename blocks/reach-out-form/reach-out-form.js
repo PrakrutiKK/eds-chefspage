@@ -100,8 +100,9 @@ function validateInput(input) {
 async function submitForm(form, endpoint) {
   const body = new URLSearchParams(new FormData(form));
   body.append('page', window.location.pathname);
-  // form-encoded POST is a simple request, so no CORS preflight is needed
-  const resp = await fetch(endpoint, { method: 'POST', body });
+  // form-encoded POST with an Accept header is a simple request, so no CORS preflight is needed.
+  // Accept: application/json makes services like Formspree reply with JSON instead of a redirect.
+  const resp = await fetch(endpoint, { method: 'POST', body, headers: { Accept: 'application/json' } });
   if (!resp.ok) throw new Error(`Submission failed: ${resp.status}`);
   const result = await resp.json().catch(() => ({}));
   if (result.result && result.result !== 'success') throw new Error(result.error || 'Submission rejected');
