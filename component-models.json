@@ -5199,6 +5199,25 @@
     ]
   },
   {
+    "id": "reach-out-form",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "endpoint",
+        "label": "Submission endpoint (Apps Script web app URL)",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "successMessage",
+        "label": "Success message",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "steps-preparation",
     "fields": [
       {
